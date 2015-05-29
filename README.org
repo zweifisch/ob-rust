@@ -1,0 +1,27 @@
+* ob-rust
+
+org-babel functions for rust evaluation
+
+** examples
+
+: #+BEGIN_SRC rust
+: for count in 0..3 {
+:     println!("{}. Hello World!", count);
+: }
+: #+END_SRC
+: 
+: #+RESULTS:
+: : 0. Hello World!
+: : 1. Hello World!
+: : 2. Hello World!
+
+the last expression will be printed automatically
+
+: #+BEGIN_SRC rust
+: let double = |num| { num + num };
+: 
+: double(17)
+: #+END_SRC
+: 
+: #+RESULTS:
+: : 34
